@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+  .App {
+    overflow: hidden;
+    .Main {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .MenuBar {
+    background: #ffffffa9;
+    .MenuList {
+      flex: 1 0 0;
+      justify-content: space-evenly;
+    }
+    button {
+      border-radius: unset;
+    }
+  }
+  .HomePage {
+    flex-direction: column-reverse;
+    padding-bottom: unset;
+    .HP_Content {
+      flex: unset;
+      padding: 0 10px;
+    }
+  }
+  .MemberInfo {
+    width: auto;
+    border-radius: unset;
+    height: auto;
+    background: #ffffffa9;
+    overflow: unset;
+  }
+  .Shortcut {
+    .List {
+      flex-wrap: nowrap;
+      overflow-y: auto;
+    }
+  }
+  .IconButton {
+    width: unset;
+    min-width: calc(40% - 5px);
+  }
+  .BannerItem {
+    min-height: 150px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .BN_Content {
+      bottom: 5%;
+      left: 30%;
+    }
+  }
+  .NewList {
+    flex-direction: column;
+    width: 100%;
+    height: unset;
+    padding: unset;
+    .NL_Content {
+      height: unset;
+      flex: unset;
+      gap: 10px;
+    }
+    .MainNewest {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+  .ExchangeRate {
+    flex-direction: column;
+    min-height: unset;
+    padding: unset;
+    gap: 10px;
+    .ExchangeReport {
+      min-height: 300px;
+    }
+  }
+  .Table {
+    .TableBody {
+      flex: unset;
+    }
+  }
+  .SelectShortcut {
+    width: 90%;
+  }
+  .SS_List {
+    .IconButton {
+      min-width: calc(50% - 5px);
+    }
+  }
+}

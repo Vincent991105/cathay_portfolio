@@ -1,0 +1,8 @@
+What is virtual DOM and what purpose does it aim to solve??
+
+Virtual DOM 是一種虛擬化的DOM，
+主要是透過 JavaScript 物件來模擬 Real DOM 結構。
+它不是瀏覽器內建的功能，而是前端框架（如 React、Vue）所實現的一種機制。
+
+使用Virtual DOM主要目地是為了提升 UI 更新效能，
+避免頻繁直接操作 Real DOM，從而減少不必要的效能耗費。

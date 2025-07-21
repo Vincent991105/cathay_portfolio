@@ -1,0 +1,12 @@
+Can you explain about the type of never and what is the differ with void?
+
+(1)Void
+> 用來定義沒有回傳值的函式
+> 通常用在 只執行動作、不需要回傳 的情境，例如 console.log 或事件處理器。
+
+(2)never
+> 用來定義不會走到 return 的函式，因為它會丟錯誤或陷入無窮迴圈。
+> 通常用在 錯誤拋出 或 型別檢查（exhaustive check）。
+
+(3)Void 比較 never的差別
+Void和never同樣都是不會回傳值；但前者會將Function走完，而後者則會直接卡死。

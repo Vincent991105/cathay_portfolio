@@ -1,0 +1,49 @@
+<style>
+  .container {
+    font-size: 14px;
+  }
+  .container .header {
+    font-size: 18px;
+  }
+  .container .shop-list {
+    list-style: none;
+    margin-left: -15px;
+  }
+  .container .shop-list li.item {
+    color: green;
+  }
+  .container .shop-list .item {
+    /* Q2-1. Explain why does this color not works, and how to fix make it work on 1st list */
+    color: blue;
+    /* 答案：結果會呈現綠色；因為上述有使用到<li.item>，在Css規則當中，這段程式同時使用了(元素+類別選擇器)。而此段程式僅使用了類別選擇器，相對於(元素+類別選擇器)的內容權重會低一階。 */
+    /* 修改(1)：.container .shop-list .item >>  .container .shop-list:nth-child(1) .li.item*/
+    /* 修改(2)：.container .shop-list .item >>  .container .ol.shop-list .li.item*/
+  }
+  /* Q2-2. Write styling make every other line give background color to next one */
+  /* 答案： */
+  .container .shop-list .item:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  .container .shop-list .item:nth-child(even) {
+    background-color: #8da2ff;
+  }
+</style>
+
+<div class="container">
+  <div class="header">5/8 外出確認表</div>
+  <div class="content">
+    <ol class="shop-list">
+      <li class="item">麵包</li>
+      <li class="item">短袖衣服</li>
+      <li class="item">飲用水</li>
+      <li class="item">帳篷</li>
+    </ol>
+    <ul class="shop-list">
+      <li class="item">暈車藥</li>
+      <li class="item">感冒藥</li>
+      <li class="item">丹木斯</li>
+      <li class="item">咳嗽糖漿</li>
+    </ul>
+  </div>
+  <div class="footer">以上僅共參考</div>
+</div>

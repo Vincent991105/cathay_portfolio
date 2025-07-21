@@ -1,0 +1,15 @@
+What is difference between framework base website and normal website (none 
+framework)
+
+(1)framework base website
+主要用來表示採用(React，Vue，Angular等等)框架，作為網站架構的網站。
+
+(2)normal website
+僅採用HTML，CSS，JavaScript等基本程式語言作為網站開發的工具。
+
+(3)上述兩則的差異：
+a.DOM的形式：前者採用虛擬DOM的方式；後者採用真實DOM。
+b.開發效率：前者開發效率較高；後者則是更依賴開發者的撰寫習慣，習慣越好，效率越高。
+c.維護效率：前者建議的做法是將物件以元件的方式進行包裝(可以大幅增加維護的效率)；後者更傾向於在意開發者的習慣是否良好。
+d.開發難度：前者會比較高，因為需要多學習一套框架邏輯及習慣；後者則是只需要理解基本的網站程式語言。
+e.適合類型：前者更推薦使用在大型且資料高更新頻率的網站；後者則是推薦給較小或輕量的網站。
